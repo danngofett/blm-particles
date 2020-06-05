@@ -12,7 +12,9 @@ export default class WebGLView {
 		this.app = app;
 
 		this.samples = [
+			'images/trayvon-martin.png',
 			'images/ahmaud-arbery.png',
+			'images/breona-taylor.png',
 			'images/george-floyd.png',
 		];
 
