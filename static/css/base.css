@@ -177,8 +177,8 @@ table {
 body {
   --color-text: #fff;
   --color-bg: #0e0e0f;
-  --color-link: #ee9a00;
-  --color-link-hover: #8e5c00;
+  --color-link: #f8eb60;
+  --color-link-hover: #f8eb60;
   color: var(--color-text);
   background-color: var(--color-bg);
   font-family: Futura, 'futura-pt', Arial, sans-serif;
@@ -195,7 +195,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--color-link);
+  color: var(--color-text);
   outline: none;
 }
 
@@ -222,17 +222,19 @@ a:focus {
   display: inline;
 }
 
-.frame a {
-  text-transform: lowercase;
-}
-
 .frame__title-wrap {
-  max-width: 120px;
+  max-width: 80px;
 }
 
 .frame__title-wrap svg {
+  fill: white;
   height: auto;
   width: 100%;
+  transition: fill 0.25s;
+}
+
+.frame__title:hover svg {
+  fill: var(--color-link);
 }
 
 .frame__github,
@@ -252,10 +254,12 @@ a:focus {
 }
 
 .app-footer h2 {
+  font-size: 16px;
   position: absolute;
   left: 2rem;
   bottom: 2rem;
   color: white;
+  margin: 0;
 }
 
 @media screen and (min-width: 53em) {
