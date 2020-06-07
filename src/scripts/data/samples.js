@@ -1,5 +1,38 @@
 const samples = [
   {
+    src: 'images/sandra-bland.png',
+    body: {
+      age: 28,
+      causeOfDeath:
+        'Found hanged in a jail cell three days after an altercation with a police officer, Brian Encinia, during a heated pretextual traffic stop and yelling ““I will light you up. Get out. Now.”',
+      date: 'July 13, 2015',
+      name: 'Sandra Bland',
+      state: 'Waller County, Texas',
+    },
+  },
+  {
+    src: 'images/eric-garner.png',
+    body: {
+      age: 18,
+      causeOfDeath:
+        'Murdered by an NYPD officer, Daniel Pantaleo, after putting him in a chokehold while arresting him.',
+      date: 'July 17, 2014',
+      name: 'Eric Garner',
+      state: 'Staten Island, New York',
+    },
+  },
+  {
+    src: 'images/michael-brown.png',
+    body: {
+      age: 18,
+      causeOfDeath:
+        'Fatally shot by 28-year-old white Ferguson police officer, Darren Wilson, after an altercation.',
+      date: 'August 9, 2014',
+      name: 'Michael Brown',
+      state: 'Ferguson, Missouri',
+    },
+  },
+  {
     src: 'images/tamir-rice.png',
     body: {
       age: 12,
