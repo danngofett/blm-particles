@@ -13,9 +13,9 @@ const samples = [
   {
     src: 'images/eric-garner.png',
     body: {
-      age: 18,
+      age: 27,
       causeOfDeath:
-        'Murdered by an NYPD officer, Daniel Pantaleo, after putting him in a chokehold while arresting him.',
+        'Murdered by an NYPD officer, Daniel Pantaleo, after putting him in a chokehold whilst detaining him for suspicion of selling single cigarettes from packs without tax stamps. Garner repeated “I can\t breathe 11 times.”',
       date: 'July 17, 2014',
       name: 'Eric Garner',
       state: 'Staten Island, New York',
@@ -82,7 +82,7 @@ const samples = [
       age: 46,
       name: 'George Floyd',
       causeOfDeath:
-        'Murdered by asphyxiation after having his neck knelt on by a police office, Derek Chauvin, for nine minutes whilst handcuffed facedown on the street by the police.',
+        'Murdered by asphyxiation after having his neck knelt on by a police officer, Derek Chauvin, for nine minutes whilst handcuffed facedown on the street by the police.',
       date: 'May 25, 2020',
       state: 'Minneapolis, Minnesota',
     },
