@@ -171,14 +171,24 @@ table {
 }
 
 :root {
-  font-size: 16px;
-}
-
-body {
   --color-text: #fff;
   --color-bg: #0e0e0f;
   --color-link: #f8eb60;
   --color-link-hover: #f8eb60;
+
+  --spacing_3xs: 0.25rem;
+  --spacing_2xs: 0.5rem;
+  --spacing_s: 0.75rem;
+  --spacing_m: 1rem;
+  --spacing_l: 1.25rem;
+  --spacing_xl: 1.5rem;
+  --spacing_2xl: 1.75rem;
+  --spacing_3xl: 2rem;
+
+  font-size: 16px;
+}
+
+body {
   color: var(--color-text);
   background-color: var(--color-bg);
   font-family: Futura, 'futura-pt', Arial, sans-serif;
@@ -186,11 +196,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  margin: 0;
+}
+
 body {
-  background-color: #000;
+  background-color: var(--color-bg);
   margin: 0;
   overflow: hidden;
   cursor: pointer;
+}
+
+body::after {
+  background: linear-gradient(
+    20deg,
+    rgba(0, 0, 0, 0) 100% rgba(0, 0, 0, 1) 50%
+  );
+  bottom: 0;
+  content: '';
+  height: 320px;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
 }
 
 a {
@@ -203,6 +231,23 @@ a:hover,
 a:focus {
   color: var(--color-link-hover);
   outline: none;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .frame {
@@ -253,36 +298,34 @@ a:focus {
   align-items: center;
 }
 
+.app-meta {
+  bottom: var(--spacing_3xl);
+  left: var(--spacing_3xl);
+  position: absolute;
+  pointer-events: none;
+  max-width: calc(100% - var(--spacing_3xl) * 2);
+  width: 100%;
+  z-index: 10;
+}
+
+.app-meta__header {
+  margin-bottom: var(--spacing_l);
+}
+
+.app-meta__header h2 {
+  margin-bottom: var(--spacing_m);
+}
+
 .app-footer h2 {
   font-size: 16px;
   position: absolute;
-  left: 2rem;
-  bottom: 2rem;
+  right: var(--spacing_3xl);
+  top: var(--spacing_3xl);
   color: white;
   margin: 0;
 }
 
 @media screen and (min-width: 53em) {
-  .frame {
-    position: fixed;
-    text-align: left;
-    z-index: 10000;
-    top: 0;
-    left: 0;
-    display: grid;
-    align-content: space-between;
-    width: 100%;
-    max-width: none;
-    height: 100vh;
-    padding: 3rem;
-    pointer-events: none;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      'title links'
-      '... ...'
-      'github demos';
-  }
   .frame__title-wrap {
     grid-area: title;
     display: flex;
@@ -313,17 +356,27 @@ a:focus {
     height: 100vh;
     justify-content: center;
   }
-}
 
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+  .app-meta {
+    max-width: 280px;
+    left: unset;
+    bottom: unset;
+    right: var(--spacing_3xl);
+    top: var(--spacing_3xl);
+  }
+
+  .app-meta__header {
+    margin-bottom: var(--spacing_l);
+  }
+
+  .app-meta__header h2 {
+    margin-bottom: var(--spacing_m);
+  }
+
+  .app-footer h2 {
+    right: unset;
+    top: unset;
+    bottom: var(--spacing_3xl);
+    left: var(--spacing_3xl);
+  }
 }
