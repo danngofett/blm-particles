@@ -4,7 +4,7 @@ const samples = [
     body: {
       age: 32,
       causeOfDeath:
-        "Stopped and fatally shot seven times by police officer, Jeronimo Yanez, after reaching for his wallet when ordered to show his license and registration. Castile's partner, Diamond Reynolds live streamed the aftermath of the shooting on Facebook which sparked local and national protests.",
+        'Stopped for a busted tail light and fatally shot seven times by police officer, Jeronimo Yanez, after reaching for his wallet when ordered to show his license and registration.',
       date: 'July 06, 2016',
       name: 'Philando Castile',
       state: 'Falcon Heights, Minnesota',
@@ -26,7 +26,7 @@ const samples = [
     body: {
       age: 27,
       causeOfDeath:
-        "Murdered by an NYPD officer, Daniel Pantaleo, after putting him in a chokehold whilst detaining him for suspicion of selling single cigarettes from packs without tax stamps. Garner repeated “I can't breathe 11 times.”",
+        "Murdered by an NYPD officer, Daniel Pantaleo, after putting him in a chokehold whilst detaining him for suspicion of selling single cigarettes from packs without tax stamps. Garner was heard saying “Every time you see me, you want to mess with me. I'm tired of it. It stops today.” and repeated “I can't breathe 11 times.” moments before his death.",
       date: 'July 17, 2014',
       name: 'Eric Garner',
       state: 'Staten Island, New York',
