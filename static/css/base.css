@@ -208,10 +208,7 @@ body {
 }
 
 body::after {
-  background: linear-gradient(
-    20deg,
-    rgba(0, 0, 0, 0) 100% rgba(0, 0, 0, 1) 50%
-  );
+  background: linear-gradient(20deg, black 10%, transparent 90%);
   bottom: 0;
   content: '';
   height: 320px;
@@ -326,6 +323,10 @@ p {
 }
 
 @media screen and (min-width: 53em) {
+  body::after {
+    content: none;
+  }
+
   .frame__title-wrap {
     grid-area: title;
     display: flex;

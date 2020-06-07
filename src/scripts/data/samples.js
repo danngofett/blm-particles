@@ -4,7 +4,7 @@ const samples = [
     body: {
       age: 28,
       causeOfDeath:
-        'Found hanged in a jail cell three days after an altercation with a police officer, Brian Encinia, during a heated pretextual traffic stop and yelling ““I will light you up. Get out. Now.”',
+        'Found hanged in a jail cell three days after an altercation with a police officer, Brian Encinia, during a heated pretextual traffic stop and yelling “I will light you up. Get out. Now.”',
       date: 'July 13, 2015',
       name: 'Sandra Bland',
       state: 'Waller County, Texas',
@@ -70,7 +70,8 @@ const samples = [
     body: {
       age: 26,
       name: 'Breonna Taylor',
-      causeOfDeath: 'Fatally shot by police in her own home by forced entry.',
+      causeOfDeath:
+        'Fatally shot during a gunfire exchange by police who used forced entry by battering ram in her own home.',
       date: 'March 13, 2020',
       state: 'Louisville, Kentucky',
     },
