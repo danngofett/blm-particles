@@ -1,5 +1,16 @@
 const samples = [
   {
+    src: 'images/john-crawford.png',
+    body: {
+      age: 22,
+      causeOfDeath:
+        "Shot to death at a Walmart whilst on his cell phone while holding a BB gun. Ohio is an 'open carry' state which allows open carrying of firearms. Neither of the officers involved were charged.",
+      date: 'August 05, 2014',
+      name: 'John Crawford III',
+      state: 'Beavercreek, Ohio',
+    },
+  },
+  {
     src: 'images/philando-castile.png',
     body: {
       age: 32,
