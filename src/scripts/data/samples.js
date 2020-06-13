@@ -1,5 +1,16 @@
 const samples = [
   {
+    src: 'images/freddie-gray.png',
+    body: {
+      age: 25,
+      causeOfDeath:
+        "Spinal injury after being beaten, and handcuffed in a police van where he was taken for a 'rough ride'. A form of police brutality where victims are left unbelted and frequently thrown around in the vans due to eratic driving. All 5 officers involved were not charged of any crimes.",
+      date: 'April 19, 2015',
+      name: 'Freddie Gray',
+      state: 'Baltimore, Maryland',
+    },
+  },
+  {
     src: 'images/john-crawford.png',
     body: {
       age: 22,
