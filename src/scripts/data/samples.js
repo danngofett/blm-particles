@@ -115,7 +115,7 @@ const samples = [
       age: 46,
       name: 'George Floyd',
       causeOfDeath:
-        'Murdered by asphyxiation after having his neck knelt on by a police officer, Derek Chauvin, for nine minutes whilst handcuffed facedown on the street. 3 other officers were also present during the murder.',
+        'Murdered by asphyxiation after having his neck knelt on by a police officer, Derek Chauvin, for 8 minutes and 46 seconds whilst handcuffed facedown on the street. 3 other officers were also present during the murder.',
       date: 'May 25, 2020',
       state: 'Minneapolis, Minnesota',
     },
