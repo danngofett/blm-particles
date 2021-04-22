@@ -131,6 +131,17 @@ const samples = [
       state: "Kenosha, Wisconsin",
     },
   },
+  {
+    src: "images/daunte-wright.png",
+    body: {
+      age: 20,
+      name: "Daunte Wright",
+      causeOfDeath:
+        "Shot by Kimberly Ann Potter during a traffic stop. After a brief struggle and a collision into concrete barrier - Wright was pronounced dead at the scene.",
+      date: "April 11, 2021",
+      state: "Brooklyn Center, Minnesota",
+    },
+  },
 ];
 
 export default samples;
