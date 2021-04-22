@@ -121,14 +121,14 @@ const samples = [
     },
   },
   {
-    src: "images/jacob-blake.png",
+    src: "images/rayshard-brooks.png",
     body: {
-      age: 29,
-      name: "Jacob Blake",
+      age: 27,
+      name: "Rayshard Brooks",
       causeOfDeath:
-        "Was fatally shot 7 seven times, by Rusten Sheskey, during an arrest. Three of Blake's sons were in the backseat.",
-      date: "August 23, 2020",
-      state: "Kenosha, Wisconsin",
+        "Murdered by Atlanta Police Department officer, Garrett Rolfe, for sleeping in his car and blocking a drive-through lane.",
+      date: "June 12, 2020",
+      state: "Atlanta, Georgia",
     },
   },
   {
